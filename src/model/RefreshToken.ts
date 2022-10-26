@@ -1,6 +1,5 @@
 import { Schema, Document, model } from "mongoose";
 import { UserSchema, UserDocument } from "./User";
-
 interface RefreshTokenDocument extends Document {
     expiresIn: number;
     user: UserDocument;
